@@ -1,0 +1,10 @@
+<h1>Pocker Cards</h1>
+<a href="/pocker" class="btn btn-success btn-large">Refresh this page to deal a new hand</a>
+<hr />
+<table>
+  <tr>
+    <% @show.each do |card| %>
+      <td><%=image_tag card%></td>
+    <% end %>
+  </tr>
+</table>

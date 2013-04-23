@@ -1,0 +1,14 @@
+<h1>Rock, Paper, Scissors</h1>
+<hr />
+<h2><%= @result %></h2>
+  <p><%= link_to "Try again", rps_path %></p>
+<table rules = "none">
+<tr>
+  <td>self: <%= @self %></td>
+  <td>computer: <%= @computer %></td>
+</tr>
+<tr>
+  <td><img width = 200 height = 180 <%= image_tag @self %></td>
+  <td><img width = 200 height = 180 <%= image_tag @computer %></td>
+</tr>
+</table>
